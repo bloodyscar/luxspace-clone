@@ -28,14 +28,14 @@
     <!-- Add your site or application content here -->
 
     <!-- START Header  -->
-    <header class="absolute w-full z-50 px-4">
+    <header class="relative w-full z-50 px-4">
       <div class="container mx-auto py-5">
         <div class="flex flex-strech items-center">
           <div class="w-56 flex items-center">
-            <img
+            <a href="index.html"><img
               src="images/design/logo.svg"
               alt="Luxspace - Adalah sebuah website yang menjual barang-barang eksklusif"
-            />
+            /></a>
           </div>
           <div class="w-full"></div>
           <!-- START menu hamburger wrapper  -->
@@ -88,7 +88,7 @@
               </li>
               <li class="ml-6">
                 <a
-                  class="flex items-center justify-center w-8 h-8 text-black hover:text-white cart cart-filled"
+                  class="flex items-center justify-center w-8 h-8 text-black cart cart-filled"
                   href="cart.html"
                 >
                   <svg
@@ -132,317 +132,252 @@
     </header>
     <!-- END Header  -->
 
-    <!-- START Section Hero  -->
-    <section class="flex items-center hero">
-      <!-- START Section Hero - Left Side  -->
-      <div
-        class="w-full absolute z-20 inset-0 md:relative md:w-1/2 text-center flex flex-col justify-center hero-caption"
-      >
-        <h1 class="text-3xl md:text-5xl leading-tight semi-bold">
-          The Game <br />
-          You’ve Dreaming
-        </h1>
-        <h2 class="px-8 text-base md:px-0 md:text-lg my-6 tracking-wide">
-          We are provided All
-          <br class="hidden lg:block" />
-          your games feel like homey
-        </h2>
-        <div>
-          <a
-            href="#arrived-today"
-            class="bg-yellow-400 hover:bg-black text-black hover:text-white rounded-full px-8 py-3 mt-4 inline-block flex-none"
-          >
-            Explore Now
-          </a>
-        </div>
-      </div>
-      <!-- END Section Hero - Left Side  -->
-      <!-- START Section Hero - Right Side  -->
-      <div class="w-full inset-0 md:relative md:w-1/2">
-        <div class="relative hero-image">
-          <div class="overlay inset-0 bg-black opacity-30 z-10"></div>
-          <div class="overlay right-0 bottom-0 md:inset-0">
-            <button
-              class="video hero-cta focus:outline-none z-30 modal-trigger"
-              data-content='<div class="w-screen pb-56 md:w-88 relative z-50">
-              <div class="absolute w-full h-full">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/BO8lX3hDU30" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-            </div>'
-            ></button>
-          </div>
-          <img
-            class="absolute inset-0 md:relative w-full h-full object-cover object-center"
-            src="images/content/cyberpunk.jpg"
-            alt="House with Sofa and some plants"
-          />
-        </div>
-      </div>
-      <!-- END Section Hero - Right Side  -->
-    </section>
-    <!-- END Section Hero  -->
-
-    <!-- START Browse the menu  -->
-    <section class="flex bg-gray-100 py-16 px-4" id="browse-the-room">
+    <!-- START breadcrumb  -->
+    <section class="bg-gray-100 py-10 px-4">
       <div class="container mx-auto">
-        <div class="flex flex-start mb-4">
-          <h3 class="text-2xl capitalize font-semibold leading-tight">
-            Browse The Game <br class="" />
-            That We Recommended For You
-          </h3>
-        </div>
-        <div class="grid grid-rows-2 grid-cols-9 gap-4">
-          <!-- START item browse the room 1  -->
-          <div
-            class="relative col-span-9 row-span-1 md:col-span-4 card"
-            style="height: 180px"
-          >
-            <div class="card-shadow rounded-xl">
-              <img
-                src="./images/content/image-catalog-1.jpg"
-                class="w-full h-full object-cover overlay overflow-hidden rounded-xl"
-                alt=""
-              />
-            </div>
-            <!-- <div
-              class="overlay left-0 top-0 bottom-0 flex justify-center flex-col pl-48 md:pl-72"
-            >
-              <h5 class="text-lg font-semibold">Living Room</h5>
-              <span class="">18.309 items</span>
-            </div> -->
-            <a href="details.html" class="stretched-link">
-              <!-- fake children  -->
-            </a>
-          </div>
-          <!-- END item browse the room 1  -->
+        <ul class="flex breadcrumb">
+          <li class=""><a href="index.html">Home</a></li>
+          <li class="font-semibold"><a aria-label="current-page" href="#">Shopping Cart</a></li>
+        </ul>
+      </div>
+    </section>
+    <!-- END breadcrumb  -->
 
-          <!-- START item browse the room 2  -->
-          <div
-            class="relative col-span-9 row-span-1 md:col-span-2 md:row-span-2 card"
-          >
-            <div class="card-shadow rounded-xl">
-              <img
-                src="./images/content/image-catalog-2.jpg"
-                class="w-full h-full object-cover overlay overflow-hidden rounded-xl"
-                alt=""
-              />
+    <!-- START Cart  -->
+    <section class="md:py-16">
+      <div class="container mx-auto px-4">
+        <div class="block md:flex -mx-4 flex-wrap">
+          <!-- START shipping cart  -->
+          <div class="w-full px-4 mb-4 md:w-8/12 md:mb-0">
+            <div class="flext flex-start mb-4 mt-8 pb-3 border-gray-200 md:border-b-0">
+              <h3 class="text-2xl">Shopping Cart</h3>
             </div>
-            <!-- <div
-              class="overlay inset-0 md:bottom-auto flex justify-center md:items-center flex-col pl-48 md:pl-0 pt-0 md:pt-12"
-            >
-              <h5 class="text-lg font-semibold">Decoration</h5>
-              <span class="">77.392 items</span>
-            </div> -->
-            <a href="details.html" class="stretched-link">
-              <!-- fake children  -->
-            </a>
-          </div>
-          <!-- END item browse the room 2  -->
+            <!-- START table title  -->
+            <div class="border-b border-gray-200 mb-4 hidden md:block">
+              <div class="flex flex-start items-center pb-2 -mx-4">
+                <div class="px-4 flex-none">
+                  <div class="" style="width:90px;">
+                    <h6>Photo</h6>
+                  </div>
+                </div>
+                <div class="px-4 w-5/12">
+                  <div class="">
+                    <h6>Product</h6>
+                  </div>
+                </div>
+                <div class="px-4 w-5/12">
+                  <div class="">
+                    <h6>Price</h6>
+                  </div>
+                </div>
+                <div class="px-4 w-2/12">
+                  <div class="">
+                    <h6>Action</h6>
+                  </div>
+                </div>
+              </div>
+              <!-- END table title  -->
+            </div>
+              <!-- START Table item 1  -->
+              <div class="flex flex-wrap flex-start items-center mb-4 -mx-4">
+                <div class="px-4 flex-none">
+                  <div style="width:90px; height:90px;">
+                    <img src="./images/content/chair1.jpg" alt="" class="object-cover rounded-xl w-full">
+                  </div>
+                </div>
+                <div class="px-4 w-auto w-5/12 flex-1">
+                  <div class="">
+                    <h6 class="font-semibold text-lg md:text-xl leading-0">
+                      Cyberpunk 2077
+                    </h6>
+                    <span class="text-sm md:text-lg">PS4</span>
+                    <h6 class="font-semibold text-base md:text-lg block md:hidden">IDR 499.000</h6>
+                  </div>
+                </div>
+                <div class="px-4 w-auto w-5/12 flex-none md:flex-1 hidden md:block">
+                  <div class="">
+                    <h6 class="font-semibold text-lg">IDR 499.000</h6>
+                  </div>
+                </div>
+                <div class="px-4 w-2/12">
+                  <div class="text-center">
+                    <button class="text-red-600 border-none focus:outline-none px-3 py-1">
+                      X
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- END Table item 1  -->
 
-          <!-- START item browse the room 3  -->
-          <div
-            class="relative col-span-9 row-span-1 md:col-span-3 md:row-span-2 card"
-          >
-            <div class="card-shadow rounded-xl">
-              <img
-                src="./images/content/image-catalog-3.jpg"
-                class="w-full h-full object-cover overlay overflow-hidden rounded-xl"
-                alt=""
-              />
-            </div>
-            <!-- <div
-              class="overlay inset-0 md:bottom-auto flex justify-center md:items-center flex-col pl-48 md:pl-0 pt-0 md:pt-12"
-            >
-              <h5 class="text-lg font-semibold">Bed Room</h5>
-              <span class="">22.094 items</span>
-            </div> -->
-            <a href="details.html" class="stretched-link">
-              <!-- fake children  -->
-            </a>
-          </div>
-          <!-- END item browse the room 3  -->
+              <!-- START Table item 2  -->
+              <div class="flex flex-wrap flex-start items-center mb-4 -mx-4 mt-10">
+                <div class="px-4 flex-none">
+                  <div style="width:90px; height:90px;">
+                    <img src="./images/content/chair1.jpg" alt="" class="object-cover rounded-xl w-full">
+                  </div>
+                </div>
+                <div class="px-4 w-auto w-5/12 flex-1">
+                  <div class="">
+                    <h6 class="font-semibold text-lg md:text-xl leading-0">
+                      Zelda Welda
+                    </h6>
+                    <span class="text-sm md:text-lg">Xbox X One</span>
+                    <h6 class="font-semibold text-base md:text-lg block md:hidden">IDR 599.000</h6>
+                  </div>
+                </div>
+                <div class="px-4 w-auto w-5/12 flex-none md:flex-1 hidden md:block">
+                  <div class="">
+                    <h6 class="font-semibold text-lg">IDR 599.000</h6>
+                  </div>
+                </div>
+                <div class="px-4 w-2/12">
+                  <div class="text-center">
+                    <button class="text-red-600 border-none focus:outline-none px-3 py-1">
+                      X
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- END Table item 2  -->
 
-          <!-- START item browse the room 4  -->
-          <div class="relative col-span-9 row-span-1 md:col-span-4 card">
-            <div class="card-shadow rounded-xl">
-              <img
-                src="./images/content/image-catalog-4.jpg"
-                class="w-full h-full object-cover overlay overflow-hidden rounded-xl"
-                alt=""
-              />
-            </div>
-            <!-- <div
-              class="overlay left-0 top-0 bottom-0 flex justify-center flex-col pl-48 md:pl-72"
-            >
-              <h5 class="text-lg font-semibold">Children Room</h5>
-              <span class="">807 items</span>
-            </div> -->
-            <a href="details.html" class="stretched-link">
-              <!-- fake children  -->
-            </a>
+              <!-- START Table item 3  -->
+              <div class="flex flex-wrap flex-start items-center mb-4 -mx-4 mt-10">
+                <div class="px-4 flex-none">
+                  <div style="width:90px; height:90px;">
+                    <img src="./images/content/chair1.jpg" alt="" class="object-cover rounded-xl w-full">
+                  </div>
+                </div>
+                <div class="px-4 w-auto w-5/12 flex-1">
+                  <div class="">
+                    <h6 class="font-semibold text-lg md:text-xl leading-0">
+                      Starwars Jedi
+                    </h6>
+                    <span class="text-sm md:text-lg">Steam</span>
+                    <h6 class="font-semibold text-base md:text-lg block md:hidden">IDR 799.000</h6>
+                  </div>
+                </div>
+                <div class="px-4 w-auto w-5/12 flex-none md:flex-1 hidden md:block">
+                  <div class="">
+                    <h6 class="font-semibold text-lg">IDR 799.000</h6>
+                  </div>
+                </div>
+                <div class="px-4 w-2/12">
+                  <div class="text-center">
+                    <button class="text-red-600 border-none focus:outline-none px-3 py-1">
+                      X
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- END Table item 3  -->
+            
           </div>
-          <!-- END item browse the room 4  -->
+          <!-- END shipping cart  -->
+
+          <!-- START shipping details -->
+          <div class="w-full md:w-3/12 bg-gray-200 rounded-xl mt-8 md:ml-8">
+            <div class="py-6 px-7">
+              <div class="pb-6">
+                <h2 class="text-xl">Shipping Details</h2>
+              </div>
+              <div class="flex flex-col">
+                <label for="name" class="pb-2">Complete Name</label>
+                <input type="text" placeholder="Complete Name" name="name" id="name" class="text-sm rounded-lg h-11 w-auto px-3">
+              </div>
+              <div class="flex flex-col mt-3">
+                <label for="email" class="pb-2">Email Address</label>
+                <input type="text" placeholder="heynowo@gmail.com" name="email" id="email" class="text-sm rounded-lg h-11 w-auto px-3">
+              </div>
+              <div class="flex flex-col mt-3">
+                <label for="address" class="pb-2">Address</label>
+                <input type="text" placeholder="Jl. Raya Bogor No. 1" name="address" id="address" class="text-sm rounded-lg h-11 w-auto px-3">
+              </div>
+              <div class="flex flex-col mt-3">
+                <label for="phone" class="pb-2">Phone Number</label>
+                <input type="text" placeholder="Jl. Raya Bogor No. 1" name="phone" id="phone" class="text-sm rounded-lg h-11 w-auto px-3">
+              </div>
+              <!-- START choose courier  -->
+              <div class="flex flex-col mt-3">
+                <label for="courier" class="pb-2">Choose Courier</label>
+                <div class="flex -mx-2 flex-wrap">
+                  <!-- START courier 1 -->
+                  <div class="px-2 w-6/12 h-24 mb-4">
+                    <button type="button" class="border border-gray-200 focus:outline-none focus:ring ring-blue-500 flex items-center
+                    justify-center rounded-xl bg-white w-full h-full">
+                    <img src="./images/design/fedex.png" alt="" class="object-contain max-h-full">
+                    </button>
+                  </div>
+                  <!-- END courier 1 -->
+                  <!-- START courier 2 -->
+                  <div class="px-2 w-6/12 h-24 mb-4">
+                    <button type="button" class="border border-gray-200 focus:outline-none focus:ring ring-blue-500 flex items-center
+                    justify-center rounded-xl bg-white w-full h-full">
+                    <img src="./images/design/dhl.png" alt="" class="object-contain max-h-full">
+                    </button>
+                  </div>
+                  <!-- END courier 2 -->
+                </div>
+              </div>
+              <!-- END choose courier  -->
+
+              <!-- START payment  -->
+              <div class="flex flex-col mt-3">
+                <label for="payment" class="pb-2">Choose payment</label>
+                <div class="flex -mx-2 flex-wrap">
+                  <!-- START payment 1 -->
+                  <div class="px-2 w-6/12 h-24 mb-4">
+                    <button type="button" class="border border-gray-200 focus:outline-none focus:ring ring-blue-500 flex items-center
+                    justify-center rounded-xl bg-white w-full h-full">
+                    <img src="./images/design/midtrans.png" alt="" class="object-contain max-h-full">
+                    </button>
+                  </div>
+                  <!-- END payment 1 -->
+                  <!-- START payment 2 -->
+                  <div class="px-2 w-6/12 h-24 mb-4">
+                    <button type="button" class="border border-gray-200 focus:outline-none focus:ring ring-blue-500 flex items-center
+                    justify-center rounded-xl bg-white w-full h-full">
+                    <img src="./images/design/mastercard.png" alt="" class="object-contain max-h-full">
+                    </button>
+                  </div>
+                  <!-- END payment 2 -->
+                  <!-- START payment 3 -->
+                  <div class="px-2 w-6/12 h-24 mb-4">
+                    <button type="button" class="border border-gray-200 focus:outline-none focus:ring ring-blue-500 flex items-center
+                    justify-center rounded-xl bg-white w-full h-full">
+                    <img src="./images/design/bitcoin.png" alt="" class="object-contain max-h-full">
+                    </button>
+                  </div>
+                  <!-- END payment 3 -->
+                  <!-- START payment 4 -->
+                  <div class="px-2 w-6/12 h-24 mb-4">
+                    <button type="button" class="border border-gray-200 focus:outline-none focus:ring ring-blue-500 flex items-center
+                    justify-center rounded-xl bg-white w-full h-full">
+                    <img src="./images/design/amex.png" alt="" class="object-contain max-h-full">
+                    </button>
+                  </div>
+                  <!-- END payment 4 -->
+                </div>
+              </div>
+              <!-- END payment  -->
+              <button type="submit" class="focus:outline-none w-full bg-yellow-400 hover:bg-yellow-300 font-semibold px-6 py-6 rounded-xl">
+                <a href="success.html">Checkout Now</a>
+              </button>
+            </div>
+            <div>
+            </div>
+          </div>
+          <!-- END shipping details -->
+
         </div>
       </div>
     </section>
-    <!-- END Browse the menu  -->
+    <!-- END Cart  -->
+    
 
-    <!-- START just arrived  -->
-    <section class="flex flex-col py-14" id="arrived-today">
-      <div class="container mx-auto mb-4">
-        <div class="flex justify-center text-center mb-4">
-          <h3 class="text-2xl capitalize font-semibold">
-            just coming <br />
-            This winter For You
-          </h3>
-        </div>
-      </div>
-      <div class="overflow-x-hidden px-4" id="carousel">
-        <div class="container mx-auto"></div>
-        <div class="flex -mx-4 flex-row relative">
-          <!-- START item carousel 1  -->
-          <div class="px-4 relative card">
-            <div
-              class="rounded-xl overflow-hidden card-shadow"
-              style="width: 287px; height: 368px"
-            >
-              <img
-                src="./images/content/img-carousel-1.jpg"
-                alt="Cangkir"
-                class="w-full h-full object-cover object-center"
-              />
-            </div>
-            <h5 class="text-lg font-semibold mt-4">Cyberpunk 2077</h5>
-            <span class="">IDR 755.000</span>
-            <a href="details.html" class="stretched-link">
-              <!-- fake Children  -->
-            </a>
-          </div>
-          <!-- END item carousel 1  -->
-
-          <!-- START item carousel 2  -->
-          <div class="px-4 relative card">
-            <div
-              class="rounded-xl overflow-hidden card-shadow"
-              style="width: 287px; height: 368px"
-            >
-              <img
-                src="./images/content/img-carousel-2.jpg"
-                alt="Cangkir"
-                class="w-full h-full object-cover object-center"
-              />
-            </div>
-            <h5 class="text-lg font-semibold mt-4">Resident Evil 2</h5>
-            <span class="">IDR 649.000</span>
-            <a href="details.html" class="stretched-link">
-              <!-- fake Children  -->
-            </a>
-          </div>
-          <!-- END item carousel 2  -->
-
-          <!-- START item carousel 3  -->
-          <div class="px-4 relative card">
-            <div
-              class="rounded-xl overflow-hidden card-shadow"
-              style="width: 287px; height: 368px"
-            >
-              <img
-                src="./images/content/img-carousel-3.jpg"
-                alt="Cangkir"
-                class="w-full h-full object-cover object-center"
-              />
-            </div>
-            <h5 class="text-lg font-semibold mt-4">Animal Crossing</h5>
-            <span class="">IDR 499.000</span>
-            <a href="details.html" class="stretched-link">
-              <!-- fake Children  -->
-            </a>
-          </div>
-          <!-- END item carousel 3  -->
-
-          <!-- START item carousel 4  -->
-          <div class="px-4 relative card">
-            <div
-              class="rounded-xl overflow-hidden card-shadow"
-              style="width: 287px; height: 368px"
-            >
-              <img
-                src="./images/content/img-carousel-4.jpg"
-                alt="Cangkir"
-                class="w-full h-full object-cover object-center"
-              />
-            </div>
-            <h5 class="text-lg font-semibold mt-4">Zelda Breath of X</h5>
-            <span class="">IDR 799.000</span>
-            <a href="details.html" class="stretched-link">
-              <!-- fake Children  -->
-            </a>
-          </div>
-          <!-- END item carousel 4  -->
-
-          <!-- START item carousel 3  -->
-          <div class="px-4 relative card">
-            <div
-              class="rounded-xl overflow-hidden card-shadow"
-              style="width: 287px; height: 368px"
-            >
-              <img
-                src="./images/content/img-carousel-6.jpg"
-                alt="Cangkir"
-                class="w-full h-full object-cover object-center"
-              />
-            </div>
-            <h5 class="text-lg font-semibold mt-4">Starwars Jedi Fallen</h5>
-            <span class="">IDR 999.000</span>
-            <a href="details.html" class="stretched-link">
-              <!-- fake Children  -->
-            </a>
-          </div>
-          <!-- END item carousel 3  -->
-        </div>
-      </div>
-    </section>
-    <!-- END just arrived  -->
-
-    <!-- START Client  -->
-    <section class="container mx-auto py-12">
-      <div class="md:flex md:justify-center">
-        <div class="flex justify-center">
-          <div>
-            <img
-              class="ml-5 md:mx-16"
-              src="./images/design/client-1.png"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-              class="ml-5 md:mx-16"
-              src="./images/design/client-2.png"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="flex justify-center mt-6 md:mt-0">
-          <div>
-            <img class="md:mx-16" src="./images/design/client-3.png" alt="" />
-          </div>
-          <div>
-            <img
-              class="ml-3 md:mx-16"
-              src="./images/design/client-4.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END Client  -->
 
     <!-- START aside / footer menu  -->
-    
-    <section class="mt-6 bg-gray-200">
-      <hr class="mt-14" />
+    <section class="mt-14">
+      <hr/>
       <div class="py-12 w-full flex justify-center">
         <div class="flex justify-center mb-8">
           <img src="images/design/logo.svg" alt="" />
@@ -529,6 +464,7 @@
     </section>
     <!-- END aside / footer menu  -->
 
+    
     <!-- START Copyright  -->
     <footer class="py-9">
       <div class="flex items-center justify-center">
